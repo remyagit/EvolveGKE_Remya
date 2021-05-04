@@ -32,12 +32,7 @@ resource "google_container_node_pool" "default" {
       disable-legacy-endpoints = "true"
     }
 
-    // service_account = "terraformcloudtraining@evolve-3-workstream.iam.gserviceaccount.com" 
-    //  service_account {
-    //   email = "terraformcloudtraining@evolve-3-workstream.iam.gserviceaccount.com"
-    //  scopes = ["userinfo-email", "compute-ro", "storage-ro"]
-    //  scopes = ["https://www.googleapis.com/auth/cloud-platform"]
-    //  }
+    
 
     oauth_scopes = [
       "https://www.googleapis.com/auth/logging.write",
